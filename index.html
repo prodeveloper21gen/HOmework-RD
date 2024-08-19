@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>TODO List</title>
+</head>
+<body>
+    <h1 class="todo">TODO</h1>
+    <div class="blok">
+        <h1 class="date"></h1>
+        <h1 class="time"></h1>
+        <form class="addForm" action="">
+            <input type="search" class="inpSearch" name="addName" placeholder="Search or Add Task">
+            <button type="submit">Add</button>
+        </form>
+        <button class="btnRD">Remove Duplicate</button>
+        <button class="btnSort">Sort</button><br>
+        <div class="bon">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>TEXT</th>
+                        <th>Buttons</th>
+                    </tr>
+                </thead>
+                <tbody class="box"></tbody>
+            </table>
+        </div>
+    </div>
+    <dialog class="EditDialog">
+        <form class="EditForm" action="">
+            <input name="editName" class="editName" type="text"/>
+            <button type="submit" class="btnEdit">Submit</button>
+        </form>
+        <button class="closeEditDialog">Close</button>
+    </dialog>
+    <script src="/script.js"></script>
+</body>
+</html>
